@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Media Studio</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header id="encabezado">
+    <span id="inicio"></span>
+    <h1>Visual Media Studio</h1>
+    <p>Fotografía, diseño y producción audiovisual</p>
+  </header>
+
+  <nav id="menu">
+    <a href="#inicio" class="enlace-menu">Inicio</a>
+    <a href="#servicios" class="enlace-menu">Servicios</a>
+    <a href="#multimedia" class="enlace-menu">Multimedia</a>
+    <a href="#contacto" class="enlace-menu">Contacto</a>
+  </nav>
+
+  <main id="contenido-principal">
+
+    <section id="servicios">
+      <h2>Nuestros servicios</h2>
+
+      <div class="tarjeta">
+        <img src="img/paisaje.jpg" alt="Paisaje de montaña con lago">
+        <h3>Fotografía</h3>
+        <p>Capturamos momentos especiales con creatividad.</p>
+      </div>
+
+      <div class="tarjeta">
+        <img src="img/produccion.jpg" alt="Set de producción de video">
+        <h3>Producción de video</h3>
+        <p>Realizamos videos para empresas y eventos.</p>
+      </div>
+
+      <div class="tarjeta tarjeta-final">
+        <img src="img/diseño.jpg" alt="Diseñadora trabajando en monitor">
+        <h3>Diseño multimedia</h3>
+        <p>Creamos contenido visual moderno y atractivo.</p>
+      </div>
+
+      <div class="limpiar"></div>
+    </section>
+
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+
+      <div class="bloque-media">
+        <h3>Video local</h3>
+        <video controls>
+          <source src="media/video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="bloque-media">
+        <h3>Audio</h3>
+        <audio controls>
+  <source src="media/audio.mp3" type="audio/mpeg">
+</audio>
+      </div>
+
+      <div class="limpiar"></div>
+
+      <h3>Video externo</h3>
+      <div class="contenedor-iframe">
+        <iframe
+          src="https://www.youtube.com/embed/7bOptq-NPJQ"
+          title="Video de YouTube"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>¿Tienes un proyecto en mente? Escríbenos.</p>
+  <p>Correo: contacto@visualmedia.com</p>
+
+  <form id="formulario-contacto" action="mailto:contacto@visualmedia.com"
+        method="post" enctype="text/plain">
+
+    <div class="campo-formulario">
+      <label for="nombre">Nombre completo</label>
+      <input
+        type="text"
+        id="nombre"
+        name="Nombre"
+        placeholder="Escribe tu nombre"
+        required>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="correo">Correo electrónico</label>
+      <input
+        type="email"
+        id="correo"
+        name="Correo"
+        placeholder="ejemplo@correo.com"
+        required>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="asunto">Asunto</label>
+      <input
+        type="text"
+        id="asunto"
+        name="Asunto"
+        placeholder="Motivo del mensaje"
+        required>
+    </div>
+
+    <div class="campo-formulario">
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="Mensaje"
+        rows="5"
+        placeholder="Cuéntanos sobre tu proyecto..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="boton boton-formulario">
+      Enviar mensaje
+    </button>
+
+  </form>
+</section>
+
+
+  </main>
+
+  <footer id="pie">
+    <p>&copy; 2026 Visual Media Studio. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
